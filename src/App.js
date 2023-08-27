@@ -69,7 +69,7 @@ const AttendanceTable = ({ data }) => (
     <thead>
       <tr>
         <th>Name</th>
-        <th>ROLL No</th>
+        <th>Roll No</th>
         <th>Date</th>
         <th>Subject</th>
         <th>Status</th>
