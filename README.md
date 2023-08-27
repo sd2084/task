@@ -38,8 +38,7 @@ Renders the input form and the table side by side.
 
 **Here's a preview of the application:**
 
-<img width="947" alt="image" src="https://web.whatsapp.com/9f356812-c433-4d21-bf1c-32d718f1d7cc">
-
+<img width="945" alt="image" src="https://github.com/sd2084/task/assets/131029535/e2a50a15-4e21-4855-b74f-9270debd8ad0">
 
 **Prerequisites:**
 1. Make sure you have Node.js installed on your machine.
