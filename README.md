@@ -38,7 +38,7 @@ Renders the input form and the table side by side.
 
 **Here's a preview of the application:**
 
-<img width="947" alt="image" src="blob:https://web.whatsapp.com/9f356812-c433-4d21-bf1c-32d718f1d7cc">
+<img width="947" alt="image" src="https://web.whatsapp.com/9f356812-c433-4d21-bf1c-32d718f1d7cc">
 
 
 **Prerequisites:**
