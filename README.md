@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# ATTENDANCE SYSTEM:
+Leveraging the power and reactivity of the React framework, this Attendance Management System offers a seamless experience for tracking attendance data. With an emphasis on real-time updates, any data entered through our intuitive form immediately reflects in the attendance table, providing users with  dynamic user interface.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+*Features:*
 
-## Available Scripts
+Input Form: A form to collect attendance data such as:
+-Student Name
+-Registration Number
+-Date (in the format dd/mm/yyyy)
+-Subject
+-Attendance Status (Present/Absent)
 
-In the project directory, you can run:
+Attendance Table: A table displaying the recorded attendance data.
 
-### `npm start`
+*Key Features:*
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+React-Powered Dynamics:
+-Reactivity: Harnessing React's state management, the application ensures immediate updates, showcasing the dynamic nature of single-page applications.
+-Component Design: The system is broken down into reusable components, such as the AttendanceForm and AttendanceTable, promoting clean and modular code.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+*Implementation Details:*
 
-### `npm test`
+AttendanceForm Component:
+Provides input fields for name, regNo, date, subject, and status.
+Ensures data format, especially the date in dd/mm/yyyy format.
+On submission, it invokes a callback to pass the form data to the main App component.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+AttendanceTable Component:
+Displays attendance data in a neat table.
+Each row represents a student's attendance data.
 
-### `npm run build`
+Main App Component:
+Manages the overall layout and state of the application.
+Renders the input form and the table side by side.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<img width="947" alt="image" src="https://github.com/sd2084/task/assets/131029535/fb20108e-7b22-4189-977d-beaeb5153e99">
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
