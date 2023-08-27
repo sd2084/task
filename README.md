@@ -1,35 +1,37 @@
 # ATTENDANCE SYSTEM:
 Leveraging the power and reactivity of the React framework, this Attendance Management System offers a seamless experience for tracking attendance data. With an emphasis on real-time updates, any data entered through our intuitive form immediately reflects in the attendance table, providing users with  dynamic user interface.
 
+**The live version of the project is deployed:** 
 
 **Features:**
 
-Input Form: A form to collect attendance data such as:
--Student Name  -Registration Number
--Date (in the format dd/mm/yyyy)
--Subject
--Attendance Status (Present/Absent)
+*Input Form:* A form to collect attendance data such as:
+1. Student Name  -
+2. Roll Number
+3. Date (in the format dd/mm/yyyy)
+4. Subject
+5. Attendance Status (Present/Absent)
 
-Attendance Table: A table displaying the recorded attendance data.
+*Attendance Table:* A table displaying the recorded attendance data.
 
 **Key Features:**
 
-React-Powered Dynamics:
+*React-Powered Dynamics:*
 -Reactivity: Harnessing React's state management, the application ensures immediate updates, showcasing the dynamic nature of single-page applications.
 -Component Design: The system is broken down into reusable components, such as the AttendanceForm and AttendanceTable, promoting clean and modular code.
 
 **Implementation Details:**
 
-AttendanceForm Component:
+*AttendanceForm Component:*
 Provides input fields for name, regNo, date, subject, and status.
 Ensures data format, especially the date in dd/mm/yyyy format.
 On submission, it invokes a callback to pass the form data to the main App component.
 
-AttendanceTable Component:
+*AttendanceTable Component:*
 Displays attendance data in a neat table.
 Each row represents a student's attendance data.
 
-Main App Component:
+*Main App Component:*
 Manages the overall layout and state of the application.
 Renders the input form and the table side by side.
 
@@ -43,6 +45,6 @@ Renders the input form and the table side by side.
 3. Install the required dependencies: npm install
 4. Launch the application: npm start
 
-Or access the application in your browser at http://localhost:3000.
+Access the application in your browser at http://localhost:3000.
 
 
