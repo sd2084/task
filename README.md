@@ -1,7 +1,7 @@
 # ATTENDANCE SYSTEM:
 Leveraging the power and reactivity of the React framework, this Attendance Management System offers a seamless experience for tracking attendance data. With an emphasis on real-time updates, any data entered through our intuitive form immediately reflects in the attendance table, providing users with  dynamic user interface.
 
-*Features:*
+***Features:
 
 Input Form: A form to collect attendance data such as:
 -Student Name
@@ -12,13 +12,13 @@ Input Form: A form to collect attendance data such as:
 
 Attendance Table: A table displaying the recorded attendance data.
 
-*Key Features:*
+***Key Features:
 
 React-Powered Dynamics:
 -Reactivity: Harnessing React's state management, the application ensures immediate updates, showcasing the dynamic nature of single-page applications.
 -Component Design: The system is broken down into reusable components, such as the AttendanceForm and AttendanceTable, promoting clean and modular code.
 
-*Implementation Details:*
+***Implementation Details:
 
 AttendanceForm Component:
 Provides input fields for name, regNo, date, subject, and status.
@@ -34,4 +34,13 @@ Manages the overall layout and state of the application.
 Renders the input form and the table side by side.
 
 <img width="947" alt="image" src="https://github.com/sd2084/task/assets/131029535/fb20108e-7b22-4189-977d-beaeb5153e99">
+
+***How to 
+1. git clone [repository-url]
+2. cd [repository-directory]
+3. npm install
+4. npm start
+
+Or access the application in your browser at http://localhost:3000.
+
 
