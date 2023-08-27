@@ -8,8 +8,31 @@ const AttendanceForm = ({ onAdd }) => {
   const [date, setDate] = useState('');
   const [subject, setSubject] = useState('');
   const [status, setStatus] = useState('Present'); // Default status
+  const isValidDate = (input) => {
+    const parts = input.split('/');
+    if (parts.length !== 3) return false;
+    
+    const day = parseInt(parts[0], 10);
+    const month = parseInt(parts[1], 10);
+    const year = parseInt(parts[2], 10);
+    
+    if (month < 1 || month > 12) return false;
+    if (day < 1 || day > 31) return false;
+    if ((month === 4 || month === 6 || month === 9 || month === 11) && day === 31) return false;
+    if (month === 2) {
+        if (((year % 4 === 0) && (year % 100 !== 0)) || (year % 400 === 0)) {
+            if (day > 29) return false;
+        } else if (day > 28) return false;
+    }
+    return true;
+}
+
 
   const handleSubmit = () => {
+    if (!isValidDate(date)) {
+      alert("Please enter a valid date in the format dd/mm/yyyy");
+      return;
+  }
     onAdd({ name, regNo, date, subject, status }); // Include status in the data
     setName('');
     setRegNo('');
@@ -21,8 +44,8 @@ const AttendanceForm = ({ onAdd }) => {
   return (
     <div className="form-container">
       <input className="form-input" value={name} onChange={(e) => setName(e.target.value)} placeholder="Name" required  />
-      <input className="form-input" value={regNo} onChange={(e) => setRegNo(e.target.value)} placeholder="Registration No" required/>
-      <input className="form-input" value={date} onChange={(e) => setDate(e.target.value)} placeholder="Date" required />
+      <input className="form-input" value={regNo} onChange={(e) => setRegNo(e.target.value)} placeholder="Roll No" required/>
+      <input className="form-input" value={date} onChange={(e) => setDate(e.target.value)} placeholder="Date (dd/mm/yyyy)" pattern="\d{2}/\d{2}/\d{4}" required />
       <input className="form-input" value={subject} onChange={(e) => setSubject(e.target.value)} placeholder="Subject" required />
       <div className="radio-container">
         <label className="radio-label">
@@ -34,7 +57,7 @@ const AttendanceForm = ({ onAdd }) => {
           Absent
         </label>
       </div>
-      <button className="submit-button" onClick={handleSubmit}>update</button>
+      <button className="submit-button" onClick={handleSubmit}>UPDATE</button>
     </div>
   );
 };
@@ -46,7 +69,7 @@ const AttendanceTable = ({ data }) => (
     <thead>
       <tr>
         <th>Name</th>
-        <th>Registration No</th>
+        <th>ROLL No</th>
         <th>Date</th>
         <th>Subject</th>
         <th>Status</th>
