@@ -1,7 +1,7 @@
 # ATTENDANCE SYSTEM:
 Leveraging the power and reactivity of the *React framework*, this Attendance Management System offers a seamless experience for tracking attendance data. With an emphasis on real-time updates, any data entered through our intuitive form immediately reflects in the attendance table, providing users with  dynamic user interface.
 
-**The live version of the project is deployed:** 
+**The live version of the project is deployed:**  https://sd2084.github.io/task/
 
 **Features:**
 
@@ -38,7 +38,7 @@ Renders the input form and the table side by side.
 
 **Here's a preview of the application:**
 
-<img width="947" alt="image" src="https://github.com/sd2084/task/assets/131029535/fb20108e-7b22-4189-977d-beaeb5153e99">
+<img width="947" alt="image" src="blob:https://web.whatsapp.com/9f356812-c433-4d21-bf1c-32d718f1d7cc">
 
 
 **Prerequisites:**
@@ -47,8 +47,8 @@ Renders the input form and the table side by side.
 3. Git should be set up on your computer. 
 
 **Step-by-Step Guide:**
-1. Clone the repository in command prompt: git clone [repository-url]
-2. Move into the project directory in vs code: cd [repository-directory]
+1. Clone the repository in command prompt: git clone https://github.com/sd2084/task.git
+2. Move into the project directory in vs code: cd task
 3. Install the required dependencies: npm install
 4. Launch the application: npm start
 
